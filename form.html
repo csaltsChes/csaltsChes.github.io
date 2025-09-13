@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<hmtl>
+    <head>
+        <title>
+            Pennsylvania Bird Attack Contact Form
+        </title>
+        <link href="css/styles.css" type="text/css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <table class="title">
+                <tr>
+                    <td class="title"><a href="index.html">Pennsylvania Birds</a></td>
+                </tr>
+            </table>
+            <table class="links">
+                <tr>
+                    <td><a href="index.html">Home</a></td>
+                    <td class="spacing">&VeryThinSpace;|&VeryThinSpace;</td>
+                    <td><a href="gallery.html">Gallery</a></td>
+                    <td class="spacing">&VeryThinSpace;|&VeryThinSpace;</td>
+                    <td><a href="table.html">Bird Data</a></td>
+                    <td class="spacing">&VeryThinSpace;|&VeryThinSpace;</td>
+                    <td><a href="form.html">Attack Form</a></td>
+                    <td class="spacing">&VeryThinSpace;|&VeryThinSpace;</td>
+                    <td><a href="map.html">Atlas</a></td>
+                    <td class="spacing">&VeryThinSpace;|&VeryThinSpace;</td>
+                    <td><a href="#contact-info">Contact Info</a></td>
+                </tr>
+            </table>
+        </nav>
+        <!-- A fun intro, using the Google font -->
+        <main>
+            <p class="story-script">On the quiet night of September 6th, 2025, on CMU's serene campus, the author of this site was suddenly attacked from behind. Whirling around, all he saw was a gray shape flapping away into the night. . .</p>
+            <p>The genesis of this site was an avian attack on the author (which thankfully left nothing more than a few scratches), from what he can tell by either a Great Horned Owl or a Barred Owl. This prompted a fair amount of Google searching about Pennsylvania birds and owls in particular. If you have had a similar experience, let us know below!</p>
+            <p class="divider">------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+        </main>
+        <!-- Then the form, asking for useful information about the attack -->
+        <section>
+            <!-- Requirement: Form with CSS-styled background color -->
+            <form action="index.html" method="post">
+                <legend>Attack Form</legend>
+                <table>
+                    <tr>
+                        <td><label for="victim-name">Full Name*:</label></td>
+                        <!-- Requirement: Input type 1 -->
+                        <!-- Requirement: Required field -->
+                        <td><input type="text" name="victim-name" required="required" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="victim-email">Email*:</label></td>
+                        <!-- Requirement: Input type 2 -->
+                        <td><input type="email" name="victim-email" required="required" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="species">Species (if known):</label></td>
+                        <td><input type="text" name="species" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="location">Location:</label></td>
+                        <td><input type="text" name="location" /></td>
+                    </tr>
+                    <tr>
+                        <!-- Requirement: Input type 3 -->
+                        <td><label for="date">Date:</label></td>
+                        <td><input type="date" name="date" /></td>
+                    </tr>
+                    <tr>
+                        <!-- Requirement: Input type 4 -->
+                        <td><label for="injuries">Description of injuries:</label></td>
+                        <td><textarea name="injuries" maxlength="400">Please limit your description to 400 characters</textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="follow-up">Do you want us to follow up with you?*</label></td>
+                        <td>
+                            <!-- Requirement: Input type 5 -->
+                            <input type="radio" name="follow-up" value="Yes" checked="checked" /> Yes <br />
+                            <input type="radio" name="follow-up" value="No" /> No
+                        </td>
+                    </tr>
+                </table>
+                <div class="submit-container">
+                    <input type="submit" value="Submit form!" />
+                </div>
+            </form>
+        </section>
+        <footer id="contact-info">
+            <p class="title">Contact us!</p>
+            <table>
+                <tr>
+                    <td>Author: Cooper Salts</td>
+                    <td class="spacing"> ----------- </td>
+                    <td>Email: <a href="mailto:csalts@andrew.cmu.edu">csalts@andrew.cmu.edu</a></td>
+                </tr>
+            </table>
+        </footer>
+
+    </body>
+</hmtl>
