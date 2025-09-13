@@ -1,0 +1,227 @@
+/* The CSS is organized by section, then alphabetically */
+
+/* Body declarations */
+
+body {
+    background-color: #bfbfbf;
+}
+
+/* Navbar declarations */
+
+nav {
+    background-color: #00007f;
+    background-image: url("../images/Pexels_Birds_Flying.jpg");
+    background-repeat: repeat; /* We use a repeating background for the nav bar */
+    background-size: 10%;
+    color: #ffffff;
+    height: 100px;
+}
+
+nav .spacing {
+    font-size: 30pt;
+}
+
+nav a {
+    text-decoration: none; /* We don't want the header to look like it has normal links */
+    color: #ffffff;
+}
+
+nav table.title {
+    background-color: #7f7f7fbf;
+    float: left; /* A little bit of our new content to make the nav bar nice */
+}
+
+nav > table {
+    margin: 0px 0px 0px 0px;
+    background-color: #0000ffbf;
+    float: right; /* A little bit of our new content to make the nav bar nice */
+    height: inherit;
+}
+
+nav td {
+    font-size: 20pt;
+}
+
+nav td.title {
+    font-size: 30pt;
+}
+
+/* Main declarations */
+
+main .image-text {
+    text-align: center;
+}
+main .image-text img {
+    margin: 20px;
+    margin: 20px;
+    width: 40%; /* We keep the scale of the image the same by using the same percentage for width and height */
+    height: 40%;
+    vertical-align: middle;
+}
+
+main .story-script { /* Extra credit Google font */
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main h1 {
+    font-size: 50px;
+    text-shadow: 2px 2px 5px;
+}
+
+main li, main p {
+    font-size: 20pt;
+}
+
+main p.divider { /* When the content of the divider is a very long line of dashes, this creates a divider that matches the width of the page */
+    height: 30px;
+    overflow: hidden;
+}
+
+main ul {
+    list-style-image: url(../images/Pexels_Bird_Bullet.jpg); /* Fun bullet points */
+    margin-left: 40px;
+}
+
+/* Footer declarations */
+
+footer {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+footer .title {
+    margin: 0px auto 0px auto;
+    text-align: center;
+    font-size: 30pt;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+footer table {
+    margin: 0px auto 0px auto;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #7f7fff;
+}
+
+footer td {
+    padding: 10px;
+}
+
+footer td:not(.spacing) {
+    font-size: 16pt;
+}
+
+/* Section declarations */
+
+    /* Gallery section declarations */
+section .bird-card {
+    text-align: center;
+    width: 325px; /* Standardized width and height */
+    height: 400px;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 10px;
+    border-radius: 20px;
+    background-color: #9f9f9f;
+}
+
+section .bird-card img {
+    max-width: 325px; /* Using max width and height keeps it to scale, and also keeps it within the card */
+    max-height: 350px;
+    background-color: #7f7fbf;
+}
+
+section .bird-card p {
+    background-color: #7f7fbf;
+}
+
+section #gallery-table {
+    font-size: 20pt;
+}
+
+    /* Table section declarations */
+section #data-table {
+    text-align: center;
+    margin: 50px auto 50px auto;
+    font-size: 20pt;
+    border-style: solid;
+    border-color: #000000;
+    border-width: 10px;
+    border-collapse: collapse; /* To make sure the borders aren't twice as thick as desired */
+}
+
+section #data-table td, #data-table th {
+    border-style: solid;
+    border-color: #000000;
+    border-width: 3px;
+}
+
+section #data-table th {
+    background-color: #dfdfdf;
+}
+
+section #data-table tr.odd-row {
+    background-color: #bfbfdf;
+}
+
+section #data-table tr.odd-row + tr {
+    background-color: #bfbf7f;
+}
+
+section #data-table tr td:first-child {
+    background-color: #afafaf;
+}
+
+    /* Form section declarations */
+section form {
+    background-color: #bfbfff;
+    border-color: #000000;
+    border-style: dashed;
+    border-width: 3px;
+    font-size: 16pt;
+    padding: 10px;
+    margin: 50px;
+}
+
+section form .submit-container {
+    text-align: center;
+}
+
+section form input, section form textarea {
+    border-color: #000000;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 3px;
+}
+
+section form legend {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 40pt;
+}
+
+section form textarea {
+    min-width: 400px;
+}
+
+    /* Map section declarations */
+section#atlas {
+    text-align: center;
+}
+
+section#atlas iframe {
+    min-width: 1000px;
+    min-height: 800px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 5px;
+    margin: 50px;
+}
+
