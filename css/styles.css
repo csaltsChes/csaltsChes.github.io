@@ -1,4 +1,4 @@
-/* The CSS is organized by section, then alphabetically */
+/* The CSS selectors are organized by section, then alphabetically. Within each selector the declarations are organized alphabetically */
 
 /* Body declarations */
 
@@ -22,8 +22,8 @@ nav .spacing {
 }
 
 nav a {
-    text-decoration: none; /* We don't want the header to look like it has normal links */
     color: #ffffff;
+    text-decoration: none; /* We don't want the header to look like it has normal links */
 }
 
 nav table.title {
@@ -32,10 +32,10 @@ nav table.title {
 }
 
 nav > table {
-    margin: 0px 0px 0px 0px;
     background-color: #0000ffbf;
     float: right; /* A little bit of our new content to make the nav bar nice */
     height: inherit;
+    margin: 0px 0px 0px 0px;
 }
 
 nav td {
@@ -52,17 +52,16 @@ main .image-text {
     text-align: center;
 }
 main .image-text img {
-    margin: 20px;
-    margin: 20px;
-    width: 40%; /* We keep the scale of the image the same by using the same percentage for width and height */
     height: 40%;
+    margin: 20px;
     vertical-align: middle;
+    width: 40%; /* We keep the scale of the image the same by using the same percentage for width and height */
 }
 
 main .story-script { /* Extra credit Google font */
   font-family: "Story Script", sans-serif;
-  font-weight: 400;
   font-style: normal;
+  font-weight: 400;
 }
 
 main h1 {
@@ -87,14 +86,14 @@ main ul {
 /* Footer declarations */
 
 footer {
-    color: #ffffff;
     background-color: #000000;
+    color: #ffffff;
 }
 
 footer .title {
+    font-size: 30pt;
     margin: 0px auto 0px auto;
     text-align: center;
-    font-size: 30pt;
 }
 
 footer a {
@@ -102,11 +101,11 @@ footer a {
 }
 
 footer table {
-    margin: 0px auto 0px auto;
-    border-width: 5px;
-    border-style: solid;
-    border-radius: 5px;
     border-color: #7f7fff;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 5px;
+    margin: 0px auto 0px auto;
 }
 
 footer td {
@@ -121,20 +120,20 @@ footer td:not(.spacing) {
 
     /* Gallery section declarations */
 section .bird-card {
+    background-color: #9f9f9f;
+    border-color: #000000;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 10px;
+    height: 400px;
     text-align: center;
     width: 325px; /* Standardized width and height */
-    height: 400px;
-    border-style: solid;
-    border-color: #000000;
-    border-width: 10px;
-    border-radius: 20px;
-    background-color: #9f9f9f;
 }
 
 section .bird-card img {
-    max-width: 325px; /* Using max width and height keeps it to scale, and also keeps it within the card */
-    max-height: 350px;
     background-color: #7f7fbf;
+    max-height: 350px;
+    max-width: 325px; /* Using max width and height keeps it to scale, and also keeps it within the card */
 }
 
 section .bird-card p {
@@ -147,18 +146,18 @@ section #gallery-table {
 
     /* Table section declarations */
 section #data-table {
-    text-align: center;
-    margin: 50px auto 50px auto;
-    font-size: 20pt;
-    border-style: solid;
-    border-color: #000000;
-    border-width: 10px;
     border-collapse: collapse; /* To make sure the borders aren't twice as thick as desired */
+    border-color: #000000;
+    border-style: solid;
+    border-width: 10px;
+    font-size: 20pt;
+    margin: 50px auto 50px auto;
+    text-align: center;
 }
 
 section #data-table td, #data-table th {
-    border-style: solid;
     border-color: #000000;
+    border-style: solid;
     border-width: 3px;
 }
 
@@ -185,8 +184,8 @@ section form {
     border-style: dashed;
     border-width: 3px;
     font-size: 16pt;
-    padding: 10px;
     margin: 50px;
+    padding: 10px;
 }
 
 section form .submit-container {
@@ -195,15 +194,15 @@ section form .submit-container {
 
 section form input, section form textarea {
     border-color: #000000;
+    border-radius: 3px;
     border-style: solid;
     border-width: 3px;
-    border-radius: 3px;
 }
 
 section form legend {
-    font-weight: bold;
-    font-style: italic;
     font-size: 40pt;
+    font-style: italic;
+    font-weight: bold;
 }
 
 section form textarea {
@@ -216,12 +215,12 @@ section#atlas {
 }
 
 section#atlas iframe {
-    min-width: 1000px;
-    min-height: 800px;
     border-color: #000000;
+    border-radius: 5px;
     border-style: solid;
     border-width: 10px;
-    border-radius: 5px;
     margin: 50px;
+    min-height: 800px;
+    min-width: 1000px;
 }
 
